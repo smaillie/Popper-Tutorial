@@ -12,12 +12,13 @@ pipelines:
     - setup
     - run
     - validate
-  data-science-no-stages:
+  docker-data-science:
     envs:
     - host
-    path: pipelines/data-science-no-stages
+    path: pipelines/docker-data-science
     stages:
-    - run
+    - build-docker-image
+    - generate-learning-curves
     - generate-figures
     - validate
   myexp:

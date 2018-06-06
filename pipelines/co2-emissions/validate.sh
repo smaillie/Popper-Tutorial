@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-# [wf] execute validate stage
 #!/bin/bash
 # [wf] validate results and get a table
 set -ex
